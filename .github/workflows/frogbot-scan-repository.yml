@@ -24,6 +24,7 @@ jobs:
           # [Mandatory]
           # JFrog platform URL
           JF_URL: ${{ vars.JF_URL }}
+          JF_GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           oidc-provider-name: erezn-jfrog
           # [Mandatory if JF_USER and JF_PASSWORD are not provided]
